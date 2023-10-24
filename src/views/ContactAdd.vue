@@ -26,6 +26,8 @@ export default {
                 // console.log(data.file);
                 await ContactService.create(data)
                 this.message = "Liên hệ được tạo thành công."
+                alert("Liên hệ được tạo thành công");
+                this.$router.push({ name: "contactbook" });
             }
             catch (error) {
                 console.log(error)
